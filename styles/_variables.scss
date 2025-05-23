@@ -1,0 +1,26 @@
+$Neutral0: hsl(0, 0%, 100%);
+$Neutral300: hsl(252, 6%, 83%);
+$Neutral500: hsl(245, 15%, 58%);
+$Neutral700: hsl(245, 19%, 35%);
+$Neutral900: hsl(248, 70%, 10%);
+
+$Orange500: hsl(7, 88%, 67%);
+$Orange700: hsl(7, 71%, 60%);
+
+@mixin displayType($type, $direction, $alignItems, $justifyContent){
+  display: $type;
+  flex-direction: $direction;
+  align-items: $alignItems;
+  justify-content: $justifyContent;
+}
+
+@mixin objectSize($width, $height){
+  width: $width;
+  height: $height;
+}
+
+@mixin fontFormat($size, $weight, $color){
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}

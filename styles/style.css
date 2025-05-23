@@ -1,1 +1,188 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url("/assets/images/pattern-squiggly-line-top.svg"), url("/assets/images/pattern-squiggly-line-bottom-desktop.svg"), url("/assets/images/background-desktop.png");
+  background-repeat: no-repeat;
+  background-size: 30% 45%, 45% 50%, 100% 100%;
+  background-position: top right, bottom left, center;
+  color: hsl(0, 0%, 100%);
+  font-family: "Inconsolata", monospace;
+}
+
+.codingConfForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  height: 100%;
+  gap: 15px;
+  margin-top: 2%;
+}
+.codingConfForm button {
+  padding: 12px 32px;
+  width: 25%;
+  height: auto;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 700;
+  color: hsl(248, 70%, 10%);
+  font-family: "Inconsolata", monospace;
+  letter-spacing: 0;
+  background-color: hsl(7, 88%, 67%);
+  border: none;
+}
+
+h1 {
+  font-size: 55px;
+  font-weight: 800;
+  color: hsl(0, 0%, 100%);
+  width: 48%;
+  height: auto;
+  text-align: center;
+  line-height: 100%;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: hsl(252, 6%, 83%);
+  width: 50%;
+  height: auto;
+  text-align: center;
+  margin-bottom: 13px;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 500;
+  color: hsl(0, 0%, 100%);
+  width: 100%;
+  height: auto;
+}
+
+h6 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  gap: 6px;
+  color: hsl(7, 71%, 60%);
+  font-size: 12px;
+  letter-spacing: 0.3px;
+  display: none;
+}
+
+svg {
+  color: red;
+}
+
+.non-error-message {
+  color: hsl(0, 0%, 100%);
+  letter-spacing: 0.3px;
+  display: flex;
+}
+
+.uploadAvatarContainer {
+  width: 25%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 11px;
+}
+.uploadAvatarContainer .uploadBox {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 11px;
+}
+.uploadAvatarContainer .uploadBox .uploadMessage {
+  width: 100%;
+  height: auto;
+  border: 2px dashed hsla(252, 6%, 83%, 0.5);
+  border-radius: 10px;
+  background-color: hsl(248, 70%, 10%);
+  padding: 16px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+}
+.uploadAvatarContainer .uploadBox .uploadMessage img {
+  background-color: hsl(245, 19%, 35%);
+  padding: 12px;
+  border: 0.1px solid hsla(252, 6%, 83%, 0.2);
+  border-radius: 16px;
+}
+.uploadAvatarContainer .uploadBox .uploadMessage p {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: hsl(252, 6%, 83%);
+  letter-spacing: 0.2;
+}
+.uploadAvatarContainer .uploadBox .uploadMessage:hover {
+  background-color: hsl(245, 19%, 35%);
+}
+
+.detailsContainer {
+  width: 25%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 11px;
+}
+
+.uploadBox {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 11px;
+  width: 100%;
+  height: auto;
+}
+.uploadBox .input-outside-border {
+  width: 100%;
+  height: auto;
+  border: 1px solid hsla(252, 6%, 83%, 0.5);
+  padding: 4px;
+  border-radius: 16px;
+}
+.uploadBox .input-outside-border input {
+  background-color: hsl(248, 70%, 10%);
+  border: 1px solid hsla(252, 6%, 83%, 0.5);
+  width: 100%;
+  height: auto;
+  padding: 16px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: hsl(0, 0%, 100%);
+}
+.uploadBox .input-outside-border input:hover {
+  background-color: hsl(245, 19%, 35%);
+}
+.uploadBox .input-outside-border input:focus {
+  outline: none;
+}/*# sourceMappingURL=style.css.map */

@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="/styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Conference ticket generator</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -17,10 +20,13 @@
 <body>
 
   <!-- Form starts -->
-  <div class="logo">
+
+  <form action="" class="codingConfForm">
+
+    <div class="logo">
     <img src="./assets/images/logo-full.svg" alt="">
-  </div>
-  <form action="">
+   </div>
+
     <h1>Your Journey to Coding Conf 2025 Starts Here!</h1>  
 
     <h3>Secure your spot at next year's biggest coding conference.</h3>
@@ -29,36 +35,45 @@
       <label for="uploadAvatar" class="uploadBox">
         <input type="file" name="uploadAvatar" id="uploadAvatar" hidden>
         <p>Upload Avatar</p>
-        <div class="uploadMessage">
-          <img src="./assets/images/icon-upload.svg" alt="">
-          <p>Drag and drop or click to upload</p>
+        <div class="input-outside-border">
+          <div class="uploadMessage">
+            <img src="./assets/images/icon-upload.svg" alt="">
+            <p>Drag and drop or click to upload</p>
+          </div>
         </div>
       </label>
-      <h6>Upload your photo (JPG or PNG, max size: 500KB).</h6>
+      <h6 class="non-error-message"><span><img src="./assets/images/icon-info.svg" alt=""></span>Upload your photo (JPG or PNG, max size: 500KB).</h6>
+      <h6><span><img src="./assets/images/icon-info.svg" alt=""></span>File too large. Please upload a photo under 500KB</h6>
     </div>
 
-    <div class="fullNameContainer">
-      <label for="fullName">
+    <div class="fullNameContainer detailsContainer">
+      <label for="fullName" class="uploadBox">
         <p>Full Name</p>
-        <input type="text" name="fullName" id="fullName">
+        <div class="input-outside-border">
+          <input type="text" name="fullName" id="fullName">
+        </div>
       </label>  
-      <h6>Please enter your full name</h6>
+      <h6><span><img src="./assets/images/icon-info.svg" alt=""></span>Please enter your full name</h6>
     </div>
 
-    <div class="emailAdrsContainer">
-      <label for="emailAdrs">
+    <div class="emailAdrsContainer detailsContainer">
+      <label for="emailAdrs" class="uploadBox">
         <p>Email Address</p>
-        <input type="text" name="emailAdrs" id="emailAdrs" placeholder="example@email.com">
+        <div class="input-outside-border">
+          <input type="text" name="emailAdrs" id="emailAdrs" placeholder="example@email.com">
+        </div>
       </label>
-      <h6>Please enter a valid email address</h6>
+      <h6><span><img src="./assets/images/icon-info.svg" alt=""></span>Please enter a valid email address</h6>
     </div>
 
-    <div class="gitUnameContainer">
-      <label for="gitUname">
+    <div class="gitUnameContainer detailsContainer">
+      <label for="gitUname" class="uploadBox">
         <p>GitHub Username</p>
-        <input type="text" name="gitUname" id="gitUname" placeholder="@yourusername">
+        <div class="input-outside-border">
+          <input type="text" name="gitUname" id="gitUname" placeholder="@yourusername">
+        </div>
       </label>
-      <h6>Please enter a username</h6>
+      <h6><img src="./assets/images/icon-info.svg" alt="">Please enter a username</h6>
     </div>
     
     <button>Generate My Ticket</button>

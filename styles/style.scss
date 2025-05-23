@@ -1,0 +1,149 @@
+@import './variables';
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html{
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+body{
+  width: 100%;
+  height: 100%;
+  background-image: url('/assets/images/pattern-squiggly-line-top.svg'), url('/assets/images/pattern-squiggly-line-bottom-desktop.svg'), url('/assets/images/background-desktop.png');
+  background-repeat: no-repeat;
+  background-size: 30% 45%, 45% 50%, 100% 100%;
+  background-position: top right, bottom left, center;
+  color: $Neutral0;
+  font-family: "Inconsolata", monospace;
+}
+
+.codingConfForm{
+  @include displayType(flex, column, center, start);
+  @include objectSize(100%, 100%);
+  gap: 15px;
+  margin-top: 2%;
+  button{
+    padding: 12px 32px;
+    @include objectSize(25%, auto);
+    border-radius: 8px;
+    @include fontFormat(20px, 700, $Neutral900);
+    font-family: "Inconsolata", monospace;
+    letter-spacing: 0;
+    background-color: $Orange500;
+    border: none;
+  }
+}
+
+h1{
+  @include fontFormat(55px, 800, $Neutral0);
+  @include objectSize(48%, auto);
+  text-align: center;
+  line-height: 100%;
+}
+
+h3{
+  @include fontFormat(20px, 500, $Neutral300);
+  @include objectSize(50%, auto);
+  text-align: center;
+  margin-bottom: 13px;
+}
+
+p{
+  @include fontFormat(20px, 500, $Neutral0);
+  @include objectSize(100%, auto);
+}
+
+h6{
+  @include displayType(flex, row, center, start);
+  gap: 6px;
+  color: $Orange700;
+  font-size: 12px;
+  letter-spacing: 0.3px;
+  display: none;
+}
+
+svg{
+  color: red;
+}
+
+.non-error-message{
+  color: $Neutral0;
+  letter-spacing: 0.3px;
+  display: flex;
+}
+
+.uploadAvatarContainer{
+  @include objectSize(25%, auto);
+  @include displayType(flex, column, start, center);
+  gap: 11px;
+  .uploadBox{
+    @include displayType(flex, column, start, center);
+    gap: 11px;
+    .uploadMessage{
+      @include objectSize(100%, auto);
+      border: 2px dashed hsla(252, 6%, 83%, 0.5);
+      border-radius: 10px;
+      background-color: $Neutral900;
+      padding: 16px 32px;
+      @include displayType(flex, column, center, center);
+      gap: 13px;
+      img{
+        background-color: $Neutral700;
+        padding: 12px;
+        border: 0.1px solid hsla(252, 6%, 83%, 0.2);
+        
+        border-radius: 16px;
+      }
+      p{
+        @include objectSize(100%, auto); 
+        text-align: center;
+        @include fontFormat(18px, 500, $Neutral300);
+        letter-spacing: 0.2;
+      }
+    }
+    .uploadMessage:hover{
+      background-color: $Neutral700;
+    }
+  }
+  
+}
+
+.detailsContainer{
+  @include objectSize(25%, auto);
+  @include displayType(flex, column, start, center);
+  gap: 11px;
+}
+
+ .uploadBox{
+    @include displayType(flex, column, start, center);
+    gap: 11px;
+    @include objectSize(100%, auto);
+    .input-outside-border{
+      @include objectSize(100%, auto);
+      border: 1px solid hsla(252, 6%, 83%, 0.5);
+      padding: 4px;
+      border-radius: 16px;
+      input{
+      background-color: $Neutral900;
+      border: 1px solid hsla(252, 6%, 83%, 0.5);
+      @include objectSize(100%, auto);
+      padding: 16px;
+      border-radius: 10px;
+      @include fontFormat(14px, 500, $Neutral0);
+      }
+      input:hover{
+        background-color: $Neutral700;
+      }
+      input:focus{
+        outline: none;
+      }
+
+    }
+    
+ }
